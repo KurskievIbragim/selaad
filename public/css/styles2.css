@@ -1,0 +1,2870 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: unset !important;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: unset !important;
+    text-decoration: none !important;
+}
+
+.col-xxl-8 {
+    width: 65.666667%;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #eee;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+header {
+    background-color: #fff;
+}
+
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 25px;
+}
+
+.user-avatar-small {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.logo span {
+    width: 175px;
+    color: #ABABAB;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 127.038%;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav ul li {
+    margin-right: 25px;
+    color: #101010;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+header .search {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.burger-menu {
+    border-radius: 50px;
+    border: 1px solid #675DD3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.burger-modal {
+    height: 100%;
+    width: 100%;
+}
+
+.burger-menu svg {
+    fill: #675DD3;
+}
+
+
+/* ===========================
+   ====== Search Box ======
+   =========================== */
+
+.search-bar {
+    margin-bottom: 15px;
+    display: none;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+.show-form {
+    display: block;
+    opacity: 0;
+    animation: showForm 1s ease-in-out 0.2s forwards;
+}
+
+
+@keyframes showForm {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.js--open-search {
+    background: url('../../img/search.svg') no-repeat center;
+    width: 25px;
+    height: 25px;
+}
+
+
+.search-main {
+    border: 2px solid #675DD3;
+    overflow: auto;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.search-main input[type="text"] {
+    border: 0px;
+    padding: 10px;
+    width: 94%;
+}
+
+.search-main input::placeholder {
+    font-size: 15px;
+}
+
+
+.search-main input[type="text"]:focus {
+    outline: 0;
+}
+
+.search-main input[type="submit"] {
+    border: 0px;
+    background: none;
+    background-color: #675DD3;
+    color: #fff;
+    float: right;
+    padding: 10px;
+    border-radius-top-right: 5px;
+    -moz-border-radius-top-right: 5px;
+    -webkit-border-radius-top-right: 5px;
+    border-radius-bottom-right: 5px;
+    -moz-border-radius-bottom-right: 5px;
+    -webkit-border-radius-bottom-right: 5px;
+    cursor: pointer;
+}
+
+/* Main section */
+
+.main {
+    display: flex;
+}
+
+.main .container {
+    display: flex;
+}
+
+.main-left {
+
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+}
+
+.kicash {
+    background-color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    height: 682px;
+    position: relative;
+
+
+}
+
+.kic-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 88%;
+}
+
+.kicash .d-flex {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.kicash a {
+    position: absolute;
+    bottom: 10px;
+}
+
+
+.kic-item p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #101010;
+}
+
+.kic-item p:last-child {
+    margin-bottom: unset !important;
+}
+
+.kic-item hr {
+    margin-bottom: 13px;
+    width: 175px;
+}
+
+.kicash h2 {
+    margin-bottom: 15px;
+    color: #675DD3;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.dictionary {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px 19px 25px;
+    margin-top: 15px;
+    height: 340px;
+}
+
+.main-left .nextIcon {
+    margin-top: 50px !important;
+}
+
+.main-left .dictionary .nextIcon {
+    margin-top: unset !important;
+}
+
+.dictionary h2 {
+    margin-bottom: 15px;
+    color: #675DD3;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+.nextIcon {
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    float: right;
+    cursor: pointer;
+
+}
+
+.tail-left-next {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.main-left a {
+    margin-top: 17px;
+}
+
+.words div {
+    margin-bottom: 8px;
+}
+
+.words .word {
+    color: #675DD3;
+}
+
+.words-all {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.words-all .word {
+    width: 49%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.words-all .word p {
+    font-weight: 600;
+}
+
+.kicash-dict {
+    margin-top: 0;
+}
+
+.words-all .word p:first-child {
+    color: #675DD3;
+}
+
+.filters-row {
+    margin-bottom: 10px;
+}
+
+
+.words span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #101010;
+}
+
+.main-right {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.top-tails {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.top-tails .tail-long {
+    margin-right: 15px;
+}
+
+.bottom-tails .tail {
+    height: 340px;
+}
+
+.bottom-tails .tail-long {
+    margin-left: 15px;
+}
+
+.tail-long {
+    display: flex;
+    background-color: #fff;
+    height: 340px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.tail .author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    margin-right: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.tail-body {
+    padding: 25px;
+}
+
+.tail-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.tail-img img {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.slider {
+    width: 99%;
+    height: 327px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+
+}
+
+.slider h3 {
+    position: absolute;
+    padding: 15px;
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.slider ul li.active a {
+    width: 100%;
+}
+
+.tail-short {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+    width: 31%;
+}
+
+
+.author {
+    position: absolute;
+    bottom: 15px;
+}
+
+
+.bottom-tails {
+    display: flex;
+}
+
+
+.tail h2 {
+    margin-bottom: 25px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #675DD3;
+}
+
+.tail p {
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    color: #101010 !important;
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: unset !important;
+}
+
+.author p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #101010;
+}
+
+.author span {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #101010;
+}
+
+.pagination .page-link {
+    margin-right: 5px !important;
+    border-radius: 40% !important;
+    background-color: #fff !important;
+    color: #675DD3 !important;
+}
+
+.page-item.active .page-link {
+    background-color: #675DD3 !important;
+    color: #fff !important;
+    border-radius: 40% !important;
+    border: 2px solid #675DD3 !important;
+}
+
+/* Poesy section */
+
+*[tooltip]:hover:after {
+    content: attr(tooltip);
+    border: #777;
+    background-color: #fff;
+    width: 150px;
+    height: 30px;
+    color: #101010;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    text-transform: uppercase;
+
+}
+
+.poesy {
+    margin-top: 15px;
+}
+
+.poesy-section-title {
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #675DD3;
+}
+
+.poesy .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.poesy-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.poesy-all .poesy-item {
+    margin-right: 10px;
+}
+
+.poesy-item {
+    background-color: #fff;
+    padding: 25px;
+    max-width: 250px;
+    border-radius: 20px;
+    position: relative;
+    height: 360px;
+}
+
+
+.poesy-text h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #101010;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.poesy-text div p {
+    margin-bottom: 20px;
+}
+
+.poesy-author {
+    display: flex;
+    align-items: center;
+}
+
+.poesy-author-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.poesy-author-img img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.poesy-author span {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #101010;
+}
+
+.read-more {
+    display: flex;
+    justify-content: end;
+    color: #fff;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    width: 85%;
+    bottom: 15px;
+}
+
+.read-more button {
+    width: 113px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 8px 0px 20px 0;
+    color: #fff;
+    font-size: 10px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #675DD3;
+    cursor: pointer;
+}
+
+/* Banner */
+
+.kid-banner {
+    margin-top: 76px;
+    margin-bottom: 15px;
+}
+
+
+.banner {
+    border-radius: 20px;
+    background-color: #E3364B;
+    padding-left: 80px;
+    padding-top: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-text h2 {
+    leading-trim: both;
+    color: #fff;
+    text-edge: cap;
+    sans-serif    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.banner-text h3 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.banner-text p {
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    width: 526px;
+    line-height: normal;
+}
+
+.banner-text span {
+    margin-top: 30px;
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 30px;
+}
+
+.banner-btn button {
+    background-color: transparent;
+    padding-right: 20px;
+}
+
+/* Photo section */
+
+.photos .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    display: flex;
+    background-color: #675DD3;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.photos-all .photo {
+    width: 98%;
+    margin-bottom: 15px;
+}
+
+.photos-all .author{
+    display: flex;
+}
+
+.photos-all  .author-name p{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.photos-all .author span{
+    color: #FFF;
+    leading-trim: both;
+    width: 70%;
+    text-edge: cap;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+.kid-photo {
+    height: 500px;
+
+}
+
+.kid-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.photo-body {
+    padding: 25px;
+    position: relative;
+}
+
+.photo-body h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 40px;
+    width: 400px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.photo-body p {
+    max-width: 400px;
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.photos .author {
+    position: unset;
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+.photos .author img {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+}
+
+.photos .author-name {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.photos .author-name p {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.photos .author-name span {
+    color: #FFF;
+    leading-trim: both;
+    width: 70%;
+    text-edge: cap;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Famous people */
+
+.famous-people {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.famous-people .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.peoples {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.peoples .people {
+    margin-right: 10px;
+}
+
+.peoples .people:last-child {
+    margin-right: unset;
+}
+
+.people {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 244px;
+    height: 414px;
+    border-radius: 20px;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+}
+
+.people-avatar {
+    width: 120px;
+    height: 120px;
+}
+
+.people-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.people h3 {
+    color: #101010;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.people-bio {
+    width: 194px;
+    color: #101010;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nextBtn {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 25px;
+    margin-right: 25px;
+}
+
+.all-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.all-items button {
+    width: 170px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: #FFF;
+    color: #101010;
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Videostudio */
+
+.videostudio {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.video-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.poesy-all .video-items {
+    flex-wrap: wrap !important;
+    margin-bottom: 10px !important;
+}
+
+.video {
+    width: 420px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    height: 100%;
+}
+
+video {
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+
+}
+
+.fluid_video_wrapper video {
+    background-color: unset !important;
+}
+
+#fluid_video_wrapper_my-player3 {
+
+    width: 100% !important;
+}
+
+.fluid_initial_play {
+    background-color: #675DD3 !important;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+footer .container {
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.licensy {
+    display: flex;
+    flex-direction: column;
+}
+
+.licensy a {
+    color: #675DD3;
+    leading-trim: both;
+    margin-bottom: 15px;
+    text-edge: cap;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 175% */
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons div {
+    background-color: #675DD3;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.footer-line {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer-line hr {
+
+    width: 90%;
+    border-top: 1px solid #ABABAB;
+
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address p {
+    display: flex;
+    flex-direction: column;
+}
+
+.address p:first-child {
+    margin-bottom: 15px;
+    color: #000;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contacts {
+    color: #000;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contacts span:last-child {
+    color: #0000FE;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+footer .row-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #7F7F7F;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 750px;
+    padding-bottom: 20px;
+}
+
+.row-3 p {
+    margin-bottom: 25px;
+}
+
+/* Single Pages */
+
+.single-page-block {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.single-item-image {
+    width: 100%;
+    position: relative;
+}
+
+.single-item-image img {
+    border-radius: 20px;
+    width: auto;
+    max-width: 100%;
+    height: 427px;
+    object-fit: cover;
+}
+
+
+
+.single-item-image .author {
+    display: flex;
+    align-items: center;
+    bottom: 15px;
+    top: 360px;
+    left: 57%;
+    background-color: #fff;
+    height: 99px;
+    width: 378px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+    padding-top: 10px;
+    padding-left: 55px;
+}
+
+.single-item-image .author p {
+    font-size: 20px;
+}
+
+.single-item-image .author span {
+    font-size: 12px;
+}
+
+.single-person-head .author span {
+    font-size: 14px;
+}
+
+
+
+.single-item-image .author img {
+    margin-right: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.single-item-text h3 {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color: #101010;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.single-item-text h2 {
+    color: #101010;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.single-item-text div p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.single-item-text div p img {
+    width: 100% !important;
+}
+
+.single-item-text div span {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;
+    font-family: "Nunito Sans", sans-serif !important;
+    margin-bottom: 15px;
+}
+
+.single-republic .single-item-text p {
+    font-size: 16px !important;
+    font-family: "Nunito Sans", sans-serif;
+    width: 100%;
+}
+
+.single-republic .single-item-text p img {
+    border-radius: 20px;
+    width: 100% !important;
+    height: 427px;
+    object-fit: cover;
+}
+
+.single-republic .republic-title h2 {
+    margin-bottom: 0;
+}
+
+/* Kicash all */
+
+.kicash-all {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.kica {
+    width: 244px;
+    display: inline-block;
+    padding: 25px;
+    border-radius: 20px;
+    transition: all .25s ease-in-out;
+    background-color: #fff;
+    margin-bottom: 15px;
+
+}
+
+.poesy-all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.poesy-all .poesy-item {
+    margin-bottom: 15px;
+    min-height: 414px;
+}
+
+
+/* Tails all */
+
+.tails-all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tails-all .tail-long:first-child {
+    margin-right: 0;
+}
+
+.tails-all .tail {
+    margin-bottom: 15px;
+    height: 327px;
+
+}
+
+
+.tails-all .tail-short {
+    padding: unset;
+}
+
+
+.persons-page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: unset;
+}
+
+.persons-page .people {
+    margin-bottom: 15px;
+}
+
+/* Modal Window */
+
+.main-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 9999;
+    display: none;
+}
+
+.poesy-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 9999;
+    display: none;
+}
+
+.burger-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 9999;
+    display: none;
+}
+
+
+.burger-menu-mobile {
+    display: none;
+}
+
+.burger-menu-mobile button {
+    display: flex;
+    align-items: center;
+}
+
+button.burger-open {
+
+    background-color: #fff;
+}
+
+.burger-open img {
+    fill: #675DD3 !important;
+    color: #675DD3;
+}
+
+.burger-open svg {
+    fill: #675DD3 !important;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background:  white 0px -1209px / 100% 177.87% no-repeat;*/
+    /*filter: blur(275px);*/
+    background: rgba(0, 0, 0, 0.8);
+    filter: blur(15px);
+
+    flex-shrink: 0;
+}
+
+.modal-container {
+    position: relative;
+
+}
+
+.overlay .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.poesy-modal .modal-m {
+    background-color: #fff;
+    padding: 20px;
+    width: 523px;
+    min-height: 619px;
+    flex-shrink: 0;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.main-modal .modal-m {
+    background-color: #fff;
+    padding: 20px;
+    width: 523px;
+    min-height: 700px;
+    flex-shrink: 0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.modal-top {
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+
+.main-modal .modal-top div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    color: #675DD3;
+    border-radius: 50%;
+    border: 1px solid #675DD3;
+}
+
+.poesy-modal .modal-top div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    color: #675DD3;
+    border-radius: 50%;
+    border: 1px solid #675DD3;
+}
+
+.burger-modal .modal-top div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    color: #675DD3;
+    border-radius: 50%;
+    border: 1px solid #675DD3;
+}
+
+.burger-modal .modal-content ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.burger-modal .burger-content li {
+    margin-bottom: 5px;
+}
+
+.burger-modal .burger-content a {
+    font-size: 19px;
+    color: #675DD3;
+
+}
+
+.modal-top div button {
+    background: #fff;
+    color: #675DD3;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-top div button svg {
+    fill: #675DD3;
+}
+
+.modal-top div button img {
+    fill: #675DD3;
+}
+
+.modal-user-inputs {
+    margin-top: 20px;
+
+}
+
+.modal-user-inputs input::placeholder {
+    color: #ABABAB;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.modal-user-inputs input,
+.modal-user-inputs textarea,
+.modal-user-inputs select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 2px solid #D9D9D9;
+    background: #FFF;
+    color: #ABABAB;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+}
+
+.modal-user-inputs select option {
+    color: #ABABAB;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: transparent;
+}
+
+.row > * {
+    width: unset;
+}
+
+.age-group {
+    width: 27px;
+    height: 27px;
+    fill: #ABABAB;
+    float: right;
+}
+
+.modal-user-inputs button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-logo {
+    margin-bottom: 20px;
+}
+
+.modal-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    background-color: #675DD3;
+    margin-bottom: 10px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #fff;
+    color: #ABABAB;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.magazines {
+    margin-bottom: 25px;
+    background-color: #675DD3;
+}
+
+.magazines .container {
+    display: flex;
+    align-items: center;
+}
+
+.magazines-text {
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: normal;
+    font-style: normal;
+    color: #FFF;
+    padding: 40px;
+
+}
+
+.magazines-text h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+
+.magazine-page {
+    flex-wrap: wrap;
+}
+
+.magazine-page .people {
+    height: 351px;
+    max-width: 247px;
+    background-color: unset;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-right: unset;
+}
+
+.magazine-page .people:hover {
+    filter: brightness(80%);
+}
+
+.magazine-page .people img {
+    min-width: 100% !important;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.magazine-date {
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    filter: brightness(100%) !important;
+}
+
+.page-title {
+    color: #675DD3;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.magazines-text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.magazine-images {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.magazine-images img {
+    max-width: 200px;
+
+}
+
+.magazine-images img:first-child {
+    margin-right: -50px;
+}
+
+.magazine-images img:last-child {
+    margin-left: -50px;
+}
+
+.magazines .banner-btn {
+    margin-top: 230px;
+    margin-bottom: unset;
+}
+
+.magazines .banner-btn button {
+    background-color: transparent;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 327px;
+    object-fit: cover;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.62) 48.76%, rgba(0,0,0,0.44) 66.05%, transparent);
+}
+
+.slider-text {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    font-family: "Nunito Sans", sans-serif;
+
+}
+
+.slider-text div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bottom-kicash {
+    display: none;
+}
+
+
+/* Tails Page */
+
+
+.tails-all .tail-long:not(:nth-child(2)) {
+    margin-right: 10px;
+}
+
+.tails-all .tail-short {
+    width: 31%;
+}
+
+.burger-menu-mobile {
+    display: none;
+}
+
+
+
+.tails-all .tail:not(:nth-child(4)) {
+    margin-right: 10px;
+
+}
+
+.tails-all .tail:nth-child(3) {
+    margin-right: 15px;
+}
+
+
+.tails-all .tail-long:nth-child(2) {
+    margin-right: 0;
+}
+
+.poesy-all .video-items {
+    flex-direction: row;
+}
+
+.poesy-all .video {
+    width: 350px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+.poesy-all #my-player1 {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+.poesy-all #my-player2 {
+    max-width: 100%;
+    height: 100%;
+}
+
+.poesy-all #my-player3 {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+.poesy-all #my-player4 {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+.poesy-all #my-player5 {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+.poesy-all #my-player6 {
+    max-width: 100%;
+    height: 100%;
+}
+
+.poesy-all #my-player7 {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+.poesy-all #my-player8 {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+.poesy-all #my-player9 {
+    max-width: 100%;
+    height: 100%;
+}
+
+.poesy-all .video-items {
+    max-width: 100%;
+    height: 100%;
+}
+
+.single-person-head .author{
+    position: unset;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.single-person-head .author-name p {
+    font-size: 25px;
+}
+
+.single-person-head .author-name {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.single-person-head .single-item-text {
+    margin-bottom: 20px;
+}
+
+.single-person-head .author img {
+    max-width: 258px;
+    max-height: 327px;
+    border-radius: 20px;
+    width: unset;
+    height: unset;
+}
+
+.fluid_video_wrapper.fluid_player_layout_default .fluid_controls_container {
+    background: unset !important;
+}
+
+div#more-words-btn\ d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 1199px) {
+    .main-left {
+        width: 225px;
+    }
+
+    .poesy-all .poesy-item {
+        max-width: 244px;
+    }
+
+    .header-nav ul {
+        display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    .main-left {
+        display: none;
+    }
+
+    .bottom-kicash {
+        display: flex;
+        margin-top: 15px;
+        flex-direction: column;
+
+    }
+
+    .kicash {
+        width: 100%;
+        margin-bottom: 15px;
+        height: 400px;
+    }
+
+    .kicash h2 {
+        margin-bottom: 15px;
+    }
+
+    .kica {
+        width: unset;
+        max-width: 244px;
+    }
+
+    .dictionary {
+        margin-top: unset;
+        height: 400px;
+
+    }
+
+    .burger-menu-mobile {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .burger-modal .modal-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        padding: 20px;
+        flex-shrink: 0;
+        text-align: center;
+    }
+
+    .burger-modal .overlay {
+        height: 100vh;
+    }
+
+    .burger-modal .modal-top {
+        justify-content: space-between;
+    }
+
+    .poesy-item:nth-last-child(-n+2) {
+        display: none;
+    }
+
+
+    .video-items {
+        flex-direction: column;
+    }
+
+    .video-items .video:last-child {
+        display: none;
+    }
+
+
+    .poesy-all .video {
+        width: 302px;
+        height: 180px;
+    }
+
+    .magazine-page .people {
+        height: 331px;
+        max-width: 191px;
+        width: unset;
+    }
+}
+
+.burger-modal .m-modal {
+    width: 100%;
+    height: unset !important;
+    min-height: 50% !important;
+}
+
+
+.tail {
+
+}
+
+.kic-item hr {
+    width: unset;
+}
+
+
+.header-nav ul li {
+    margin-right: 10px;
+}
+
+.menu-item a:hover {
+    color: #000 !important;
+}
+
+.menu-item .modal-banner-btn-button {
+    background: #675DD3;
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px;
+
+}
+
+.page-item.active .page-link {
+    background-color: #675DD3 !important;
+    border-color: #675DD3;
+    border-radius: 5px;
+}
+
+
+.tail-img img {
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider h3 {
+    position: absolute;
+    padding: 15px;
+
+
+}
+
+.slider li {
+    border-radius: 20px;
+}
+
+.photo-body h2 {
+    width: 50%;
+}
+
+.banner-text h2 {
+    font-size: 38px;
+}
+
+.banner-text h3 {
+    font-size: 20px;
+}
+
+.banner {
+    padding-left: 20px;
+}
+
+.banner-image img {
+    width: 99%;
+}
+
+.banner-text p {
+    width: 70%;
+}
+
+.kic-item {
+    height: unset;
+}
+
+
+
+.poesy-all .poesy-item {
+    max-width: 255px;
+}
+
+
+.people {
+    width: unset;
+    max-width: 222px;
+}
+
+
+.poesy-all .poesy-item:nth-last-child(-n+2) {
+    display: block;
+}
+
+
+
+
+.tails-all .tail-long {
+    margin-right: unset;
+}
+
+
+
+@media (max-width: 820px) {
+
+
+    .single-item-image .author {
+        left: 40%;
+    }
+
+
+    .kicash {
+        height: 500px;
+    }
+
+    .dictionary {
+        height: 500px;
+    }
+
+    .tail {
+
+        margin-bottom: 15px;
+    }
+
+    .tail-long {
+        min-height: 380px;
+    }
+
+    .tail-img img {
+        width: 100%;
+    }
+
+    .bottom-tails .tail {
+        height: unset;
+    }
+
+    .photo-body p {
+        width: unset;
+    }
+
+    .photos .author {
+        position: unset;
+    }
+
+    .magazine-block {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .magazine-block  a{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    .magazine-block {
+        flex-direction: column;
+        justify-content: unset !important;
+    }
+
+    .magazines .banner-btn {
+        margin-top: unset;
+        max-width: unset;
+    }
+
+    .magazine-images {
+        max-width: 140px;
+    }
+
+    .magazine-images img {
+        width: 100%;
+    }
+
+
+    .poesy-items {
+        flex-direction: column;
+    }
+
+    .poesy-item {
+        max-width: unset;
+        margin-bottom: 15px;
+    }
+
+    .video {
+        margin-bottom: 15px;
+    }
+
+    .all-items {
+        justify-content: center;
+    }
+
+
+    .people {
+        margin-bottom: 5px;
+        width: unset;
+        height: unset;
+
+    }
+
+    .people-bio {
+        width: unset;
+        margin-bottom: 20px;
+    }
+
+    .republic-title {
+        padding: 10px;
+    }
+
+    .single-republic .single-item-text p {
+        padding: 10px;
+    }
+
+    .single-republic .single-item-text p img {
+        height: unset;
+    }
+
+    .words-all .word {
+        width: 48%;
+    }
+
+    .poesy-all .poesy-item {
+        max-width: 220px;
+    }
+    .famous-people .people:nth-last-child(-n+2) {
+        display: none;
+    }
+
+    .magazine-page .people {
+        height: 247px;
+        max-width: 173px;
+        background-color: unset;
+        padding: 0;
+        margin-bottom: 10px;
+        max-width: unset;
+        justify-content: unset;
+    }
+
+    .magazine-page .people img {
+        min-width: 100% !important;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .magazine-images img:last-child {
+        margin-left: -80px;
+    }
+
+
+    .tail-short {
+        width: 40%;
+    }
+
+    .tail h2 {
+        max-width: 185px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .tail p {
+        max-width: 195px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .single-republic .single-item-text p {
+        max-width: unset;
+    }
+
+    .tail-body {
+        padding: 20px;
+    }
+
+    .tail-short {
+        padding: 20px;
+    }
+
+    .author img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .author-name p {
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: normal;
+        margin-bottom: 0;
+    }
+
+    .author-name span {
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .single-page-block {
+        padding: unset;
+    }
+
+    footer .row-3 {
+        width: unset;
+        max-width: 708px;
+
+    }
+
+    footer .row-3:last-child {
+        margin-bottom: 20px !important;
+    }
+
+    .magazine-images img {
+        max-width: 180px;
+    }
+
+    .poesy-author-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .photo-body p {
+        max-width: 311px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .photo-body {
+        padding: 20px;
+    }
+
+    .slider {
+        margin-top: 0;
+    }
+
+
+    .tails-all .tail {
+        margin-bottom: 15px;
+        margin-top: unset;
+    }
+
+
+    .people {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .people:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .poesy-all .video {
+        width: 100%;
+        height: 390px;
+        margin-right: unset;
+    }
+
+    .poesy-all #my-player1 {
+        width: 100%;
+    }
+
+    .poesy-all #my-player2 {
+        width: 100%;
+    }
+    .poesy-all #my-player3 {
+        width: 100%;
+    }
+
+    .poesy-all #my-player4 {
+        width: 100%;
+    }
+
+    .poesy-all #my-player5 {
+        width: 100%;
+    }
+
+    .poesy-all #my-player6 {
+        width: 100%;
+    }
+
+    .poesy-all #my-player7 {
+        width: 100%;
+    }
+
+    .poesy-all #my-player8 {
+        width: 100%;
+    }
+
+    .poesy-all #my-player9 {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 765px) {
+
+
+    .words-all .word {
+        display: unset;
+    }
+
+    .tails-all {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+    .top-tails {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .tails-all .tail-short {
+        width: 100%;
+
+    }
+
+    .bottom-tails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-tails .tail-long {
+        margin-right: unset;
+    }
+
+
+
+    .tail {
+        flex-direction: column;
+    }
+
+    .tail h2 {
+        max-width: unset;
+        margin-bottom: 10px;
+    }
+
+    .tail p {
+        max-width: unset;
+        margin-bottom: 10px;
+    }
+
+
+    .peoples {
+        flex-direction: column;
+    }
+
+    .tail-short {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .tail-short {
+        min-height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .author {
+        position: unset;
+    }
+
+    .bottom-tails .tail-long {
+        margin-left: unset;
+    }
+
+    .bottom-kicash {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .kicash {
+        width: 100%;
+        margin-bottom: 15px;
+        height: 530px;
+    }
+
+    .dictionary {
+        height: unset;
+    }
+
+    .dictionary h2 {
+        margin-bottom: 0;
+    }
+
+
+    .banner-image {
+        display: none;
+
+    }
+
+    .banner {
+        padding-left: 15px;
+        padding-top: 15px;
+        flex-direction: column;
+    }
+
+    .banner-btn button {
+        padding: 15px;
+    }
+
+    .photo {
+        flex-direction: column;
+        height: unset;
+    }
+
+    .photo-body p {
+        max-width: unset;
+        width: unset;
+    }
+
+    .photos .author {
+        position: unset;
+    }
+
+    .kid-photo {
+        height: unset;
+    }
+
+    .magazines-text h2 {
+
+    }
+
+    .tails-all {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .poesy-all .poesy-item {
+        flex-direction: column;
+        max-width: 100%;
+        width: unset;
+    }
+
+    .poesy-all .video {
+        height: 290px;
+    }
+
+    .magazine-page {
+        flex-direction: row;
+    }
+
+    .magazine-page .people {
+        height: 230px;
+        margin-right: unset;
+    }
+
+    .kid-photo {
+        width: 100%;
+        height: 250px;
+    }
+
+    .photos-all .author {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .photos-all .author-name {
+        margin-left: 10px;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+    header .logo {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .logo span {
+        width: unset;
+        margin-bottom: 10px;
+    }
+
+
+    .slider ul {
+        height: 200px;
+    }
+
+    .slider ul li {
+        height: 200px;
+    }
+
+    .slider h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .slider ul li span {
+        font-size: 20px;
+    }
+
+    .search-main input[type="text"] {
+        width: 80%;
+    }
+
+    .single-item-image img {
+        height: 220px;
+    }
+
+    .single-item-text {
+        padding: 10px;
+    }
+
+    .single-item-image .author {
+        padding-left: 10px;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 180px;
+    }
+
+    .kica {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .author img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .author-name span {
+        font-size: 13px;
+    }
+
+    .author span {
+        font-size: 13px;
+    }
+
+    .tail {
+        margin-bottom: 15px;
+    }
+
+    .kicash {
+        margin-bottom: 15px;
+    }
+
+    .poesy-item {
+        margin-bottom: 15px;
+    }
+
+
+    .modal-container {
+        width: 100%;
+    }
+
+    .main-modal .modal-m {
+        width: 100%;
+        height: unset;
+    }
+
+    .poesy-modal .modal-m {
+        width: 100%;
+        height: unset;
+    }
+
+
+    .words-all .word {
+        width: 47%;
+    }
+
+    .poesy-all .video {
+        height: 220px;
+    }
+
+    .all-items {
+        margin-top: unset;
+    }
+
+    .kid-banner {
+        margin-top: 15px;
+    }
+
+    .videostudio {
+        margin-top: unset;
+        margin-bottom: 15px;
+    }
+
+
+    .video {
+        margin-bottom: 15px;
+    }
+
+    .peoples {
+        margin-top: unset;
+    }
+
+    .people {
+        margin-bottom: 15px;
+    }
+
+    .famous-people {
+        margin-bottom: 15px;
+    }
+
+    .magazines {
+        margin-bottom: 15px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .poesy-all .video {
+        height: 200px;
+    }
+
+    .main-modal .modal-top div {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .modal-top div button {
+        font-size: 30px;
+        width: 30px;
+        background-color: transparent;
+    }
+
+    .magazine-page .people {
+        width: 49%;
+        height: 260px;
+    }
+
+
+    .tail {
+        height: 440px;
+    }
+
+    .top-tails .tail-long {
+        height: 440px;
+        max-height: unset;
+    }
+
+    .tail-short {
+        height: 240px;
+    }
+
+    .bottom-tails .tail-long {
+        height: 450px;
+        max-height: unset;
+    }
+
+    .bottom-tails .tail-short {
+        height: 240px;
+    }
+
+
+    .tails-all .tail {
+        height: 450px;
+    }
+
+    .tails-all .tail-long {
+        height: 450px;
+        max-height: unset;
+    }
+
+    .tails-all .tail-short {
+        height: 240px;
+    }
+
+    .tails-all .author {
+        position: absolute;
+    }
+
+    .persons-page .people {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .people {
+        max-width: 100%;
+    }
+
+    .tail-img img {
+        height: 300px;
+    }
+
+    .top-tails .tail-long {
+        height: auto;
+        width: 100%;
+
+    }
+
+    .bottom-tails .tail-long {
+        height: auto;
+        width: 100%;
+
+    }
+
+    .single-item-image img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .single-item-image .author {
+        top: 250px;
+    }
+
+    .tail .author {
+        margin-top: 10px;
+    }
+
+    .single-person-head .author {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .single-person-head .author img {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .author img {
+        margin-right: unset;
+    }
+
+    .single-person-head .author-name p {
+        margin-top: 10px !important;
+        margin-bottom: 5px;
+    }
+
+    .tails-all .tail-long {
+        width: 100%;
+        height: auto;
+        min-height: 540px;
+    }
+
+    .single-item-text h3 {
+        margin-top: 55px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

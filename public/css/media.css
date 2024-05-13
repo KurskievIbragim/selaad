@@ -1,0 +1,315 @@
+@media(max-width: 1200px) {
+    .container {
+        max-width: 1114px;
+    }
+
+    .header-nav ul li {
+        margin-right: 15px;
+    }
+
+    .main-left {
+        width: 220px;
+    }
+
+    .tail-long {
+        width: 590px;
+        height: 347px;
+
+    }
+
+    .tail-short {
+        width: 274px;
+        height: 347px;
+    }
+
+    .kic-item hr {
+        width: 145px;
+    }
+
+    .slider {
+        width: 879px !important;
+    }
+
+    .banner {
+        padding-left: unset;
+    }
+
+    .banner-text {
+        padding-left: 25px;
+    }
+
+    .photo {
+        width: 1114px;
+    }
+
+    .kid-photo {
+        width: 620px;
+    }
+
+    .kid-photo img {
+        width: 100%;
+    }
+
+    .magazines-text h2 {
+        width: 380px;
+    }
+
+    .magazine-images {
+        margin-left: unset;
+    }
+
+    .kicash h2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 1030px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 708px;
+    }
+
+    .main .container {
+        flex-direction: column-reverse;
+    }
+
+    .header-nav ul  {
+        display: none;
+    }
+
+    .main-left {
+        width: 220px;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .top-tails .tail-long {
+        margin-right: 10px;
+    }
+
+    .bottom-tails .tail-long {
+        margin-right: 10px;
+    }
+
+    .tail-long {
+        width: 470px;
+        height: 320px;
+
+    }
+
+    .tail-short {
+        width: 233px;
+        height: 320px;
+    }
+
+    .tail-img img {
+        width: 235px;
+    }
+
+    .kicash {
+        width: 470px;
+        margin-right: 5px;
+        padding: 20px;
+    }
+
+    .kic-items {
+        width: 430px;
+    }
+
+    .kic-item:last-child {
+        display: none;
+    }
+
+    .kic-item p {
+        color:  #101010;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .kic-item hr {
+        width: 270px;
+        margin-bottom: 10px;
+    }
+
+    .slider {
+        width: 708px !important;
+    }
+
+    .author img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .tail h2 {
+        color:  #101010;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .tail p {
+        color:  #101010;
+        font-size: 14px !important;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .author p {
+        color:  #101010;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .author span {
+        color:  #101010;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .banner {
+        padding-left: unset;
+    }
+
+    .banner-text {
+        padding-left: 25px;
+    }
+
+    .photo {
+        width: 708px;
+    }
+
+    .kid-photo {
+        width: 354px;
+    }
+
+    .kid-photo img {
+        width: 100%;
+    }
+
+    .photo-body {
+        padding: 20px;
+    }
+
+    .photo-body h2 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .magazines-text {
+        width: 299px;
+    }
+
+
+    .magazines-text h2 {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .magazines-text p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .magazine-images {
+        margin-left: 90px !important;
+    }
+
+    .magazine-images img {
+        width: 128px;
+        height: 183px;
+    }
+
+    .photos .author-name p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 311px;
+    }
+
+    .photos .author-name span {
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 311px;
+    }
+
+    .magazine-images {
+        margin-left: unset;
+    }
+
+    .kicash h2 {
+        margin-bottom: 10px;
+    }
+
+    .dictionary {
+        width: 233px;
+        margin-top: unset;
+    }
+
+    .words div {
+        width: 199px;
+    }
+
+    /*  Banners */
+
+    .banner-text h2 {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        width: 278px;
+    }
+
+    .banner-text h3 {
+        width: 278px;
+    }
+
+    .banner-text p {
+        width: 287px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .banner-image img {
+        width: 295px;
+    }
+
+    .banner-text span {
+        margin-bottom: 15px;
+    }
+
+    footer .row-3 {
+        width: 708px;
+    }
+
+
+}
+
+@media(max-width: 480px) {
+
+}
+

@@ -1,0 +1,1380 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+header {
+    background-color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 25px;
+}
+
+.logo span {
+    width: 175px;
+    color:  #ABABAB;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 127.038%;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav ul li {
+    margin-right: 25px;
+    color: #101010;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+header .search {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.burger-menu {
+    border-radius: 50px;
+    border: 1px solid #675DD3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.burger-menu svg {
+    fill: #675DD3;
+}
+
+
+/* ===========================
+   ====== Search Box ======
+   =========================== */
+
+.search-bar {
+    margin-bottom: 15px;
+    display: none;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+.show-form {
+    display: block;
+    opacity: 0;
+    animation: showForm 1s ease-in-out 0.2s forwards;
+}
+
+
+@keyframes showForm {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.js--open-search {
+    background: url('../../img/search.svg') no-repeat center;
+    width: 25px;
+    height: 25px;
+}
+
+
+.search-main
+{
+    border: 2px solid #675DD3;
+    overflow: auto;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.search-main input[type="text"]
+{
+    border: 0px;
+    width: 95%;
+    padding: 10px;
+}
+
+.search-main input::placeholder {
+    font-size: 15px;
+}
+
+
+.search-main input[type="text"]:focus
+{
+    outline: 0;
+}
+
+.search-main input[type="submit"]
+{
+    border: 0px;
+    background: none;
+    background-color: #675DD3;
+    color: #fff;
+    float: right;
+    padding: 10px;
+    border-radius-top-right: 5px;
+    -moz-border-radius-top-right: 5px;
+    -webkit-border-radius-top-right: 5px;
+    border-radius-bottom-right: 5px;
+    -moz-border-radius-bottom-right: 5px;
+    -webkit-border-radius-bottom-right: 5px;
+    cursor:pointer;
+}
+
+/* ===========================
+   ====== Medua Query for Search Box ======
+   =========================== */
+
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+    .search {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+    /* Main section */
+
+.main {
+    display: flex;
+}
+
+.main .container {
+    display: flex;
+}
+
+.main-left {
+    width: 243px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kicash {
+    background-color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+
+}
+
+
+.kic-item p{
+    margin-bottom: 13px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #101010;
+}
+
+.kic-item hr {
+    margin-bottom: 13px;
+    width: 175px;
+}
+
+.kicash h2 {
+    margin-bottom: 40px;
+    color: #101010;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.dictionary {
+    background-color: #fff;
+    border-radius: 20px;
+    padding:25px 19px 25px ;
+    margin-top: 15px;
+    height: 327px;
+}
+
+.dictionary h2 {
+    margin-bottom: 35px;
+    color: #101010;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+
+.nextIcon {
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    float: right;
+    cursor: pointer;
+
+}
+
+.main-left a {
+    margin-top: 17px;
+}
+
+.words div {
+    margin-bottom: 8px;
+}
+
+.words span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #101010;
+}
+
+.main-right {
+    width: 1022px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-tails {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.top-tails .tail-long {
+    margin-right: 15px;
+}
+
+.bottom-tails .tail-long {
+    margin-left: 15px;
+}
+
+.tail-long {
+    display: flex;
+    background-color: #fff;
+    width: 706px;
+    height: 327px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.tail-long .author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    margin-right: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.tail-body {
+    padding: 25px;
+}
+
+.tail-img img {
+    width: 353px;
+    height: 100%;
+
+}
+
+.tail-img img {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.slider {
+    width: 1022px;
+    height: 327px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.tail-short  {
+    width: 301px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+    height: 327px;
+}
+
+.tail-short .author {
+    margin-bottom: 10px;
+}
+
+.author {
+    position: absolute;
+    bottom: 15px;
+}
+
+
+
+.bottom-tails {
+    display: flex;
+}
+
+
+.tail h2 {
+    margin-bottom: 25px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #101010;
+}
+
+.tail p {
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: normal !important;
+    color: #101010 !important;
+    font-family: 'Manrope' !important;
+}
+
+.author p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #101010;
+}
+
+.author span {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #101010;
+}
+
+
+/* Poesy section */
+
+*[tooltip]:hover:after {
+    content: attr(tooltip);
+    border: #777;
+    background-color: #fff;
+    width: 150px;
+    height: 30px;
+    color: #101010;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    text-transform: uppercase;
+
+}
+
+.poesy {
+    margin-top: 25px;
+}
+
+.poesy-section-title {
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #101010;
+}
+
+.poesy .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.poesy-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.poesy-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    width: 244px;
+    position: relative;
+}
+
+
+.poesy-text h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #101010;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.poesy-text div p {
+    margin-bottom: 20px;
+}
+
+.poesy-author {
+    display: flex;
+    align-items: center;
+}
+
+.poesy-author-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.poesy-author-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.poesy-author span {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #101010;
+}
+
+.read-more {
+    display: flex;
+    justify-content: end;
+    color: #fff;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    width: 85%;
+    bottom: 15px;
+}
+
+.read-more button {
+    width: 113px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 8px 0px 20px 0;
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #675DD3;
+    cursor: pointer;
+}
+
+/* Banner */
+
+.kid-banner {
+    margin-top: 76px;
+    margin-bottom: 15px;
+}
+
+
+.banner {
+    border-radius: 20px;
+    background-color: #E3364B;
+    padding-left: 80px;
+    padding-top: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-text h2 {
+    leading-trim: both;
+    color: #fff;
+    text-edge: cap;
+    font-family: Manrope;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.banner-text h3 {
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.banner-text p {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    width: 526px;
+    line-height: normal;
+}
+
+.banner-text span {
+    margin-top: 30px;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.banner-btn button{
+    background-color: #E3364B;
+}
+
+/* Photo section */
+
+.photos .container {
+    display: flex;
+}
+
+.photo {
+    display: flex;
+    background-color: #675DD3;
+    border-radius: 20px;
+    height: 500px;
+    width: 1280px;
+}
+
+.kid-photo {
+    width: 800px;
+    height: 500px;
+
+}
+
+.kid-photo img {
+    width: 800px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.photo-body {
+    padding: 25px;
+    position: relative;
+}
+
+.photo-body h2 {
+    font-family: Manrope;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.photo-body p {
+    width: 430px;
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.photos .author {
+    position: unset;
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+.photos .author img {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+}
+
+.photos .author-name {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.photos .author-name p {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.photos .author-name span {
+    color:#FFF;
+    leading-trim: both;
+    width: 238px;
+    text-edge: cap;
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Famous people */
+
+.famous-people {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.famous-people .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.peoples {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.people {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 244px;
+    height: 414px;
+    border-radius: 20px;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+}
+
+.people-avatar {
+    width: 120px;
+    height: 120px;
+}
+
+.people-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.people h3 {
+    color: #101010;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.people-bio {
+    width: 194px;
+    color: #101010;
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nextBtn {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 25px;
+    margin-right: 25px;
+}
+
+.all-items {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.all-items button {
+    width: 124px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background:#FFF;
+    color: var(--, #101010);
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Manrope;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Videostudio */
+
+.videostudio {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.video-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video {
+    width: 420px;
+    height: 236.25px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+video {
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+
+}
+
+.fluid_video_wrapper video {
+    background-color: unset !important;
+}
+
+#fluid_video_wrapper_my-player3 {
+    height: 236px !important;
+    width: 100% !important;
+}
+
+.fluid_initial_play {
+    background-color: #675DD3 !important;
+}
+
+/* Footer */
+
+footer {
+    background-color: #fff;
+}
+
+footer .container {
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.licensy {
+    display: flex;
+    flex-direction: column;
+}
+
+.licensy a {
+    color: #675DD3;
+    leading-trim: both;
+    margin-bottom: 15px;
+    text-edge: cap;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 175% */
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons div {
+    background-color: #675DD3;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.footer-line {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer-line hr {
+
+    width: 90%;
+    border-top: 1px solid #ABABAB;
+
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address p{
+    display: flex;
+    flex-direction: column;
+}
+
+.address p:first-child {
+    margin-bottom: 15px;
+    color:#000;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contacts {
+    color: #000;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contacts span:last-child {
+    color: #0000FE;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+footer .row-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #7F7F7F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 750px;
+}
+
+.row-3 p {
+    margin-bottom: 25px;
+}
+
+/* Single Pages */
+
+.single-page-block {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.single-item-image {
+    width: 100%;
+    position: relative;
+}
+
+.single-item-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: 427px;
+    object-fit: cover;
+}
+
+.single-item-image .author {
+    display: flex;
+    align-items: center;
+    bottom: 15px;
+    top: 360px;
+    left: 57%;
+    background-color: #fff;
+    height: 99px;
+    width: 378px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+    padding-top: 10px;
+    padding-left: 55px;
+}
+
+.single-item-image .author p {
+    font-size: 20px;
+}
+
+.single-item-image .author span {
+    font-size: 12px;
+}
+
+.single-item-image .author img {
+    margin-right: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.single-item-text h3 {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color: #101010;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.single-item-text h2{
+    color: #101010;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.single-item-text div p{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.single-item-text div span {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;
+    font-family: 'Manrope' !important;
+    margin-bottom: 15px;
+}
+
+/* Kicash all */
+
+.kicash-all {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 100%;
+    margin-top: 15px;
+}
+.kica {
+    width: 244px;
+    display: inline-block;
+    padding: 25px;
+    border-radius: 20px;
+    transition: all .25s ease-in-out;
+    background-color: #fff;
+    margin-bottom: 15px;
+
+}
+
+.poesy-all {
+    display: flex;
+    justify-content: space-between;
+    width: 1021px;
+    flex-wrap: wrap;
+}
+
+.poesy-all  .poesy-item {
+    margin-bottom: 15px;
+}
+
+
+/* Tails all */
+
+.tails-all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1021px;
+}
+
+.tails-all .tail {
+    margin-bottom: 15px;
+}
+
+.tails-all .tail-short {
+    padding: unset;
+}
+
+
+
+
+.persons-page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: unset;
+}
+
+.persons-page .people {
+    margin-bottom: 15px;
+}
+
+/* Modal Window */
+
+.main-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 9999;
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background:  white 0px -1209px / 100% 177.87% no-repeat;*/
+    /*filter: blur(275px);*/
+    background: rgba(0, 0, 0, 0.8);
+    background: light 0px 0px / 100% 275.556% no-repeat;
+    filter: blur(15px);
+
+    flex-shrink: 0;
+}
+
+ .modal-container {
+    position: relative;
+
+}
+
+ .overlay .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+ }
+
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    width: 523px;
+    height: 619px;
+    flex-shrink: 0;
+    text-align: center;
+    border-radius: 20px;
+
+
+}
+
+.modal-top {
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+
+.modal-top div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    color: #675DD3;
+    border-radius: 50%;
+    border: 1px solid #675DD3;
+}
+
+.modal-top div button {
+    background: #fff;
+    color: #675DD3;
+    font-size: 16px;
+}
+
+.modal-user-inputs {
+    margin-top: 20px;
+
+}
+
+.modal-user-inputs input::placeholder {
+    color: #ABABAB;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.modal-user-inputs input,
+.modal-user-inputs textarea,
+.modal-user-inputs select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 2px solid #D9D9D9;
+    background:  #FFF;
+    color: #ABABAB;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+}
+
+.modal-user-inputs select option {
+    color: #ABABAB;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: transparent;
+}
+
+
+
+.modal-user-inputs button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-logo {
+    margin-bottom: 20px;
+}
+
+.modal-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    background-color: #675DD3;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #fff;
+    color: #ABABAB;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.magazines {
+    margin-bottom: 195px;
+    background-color: #675DD3;
+}
+
+.magazines .container {
+    display: flex;
+    align-items: center;
+}
+
+.magazines-text {
+    display: flex;
+    flex-direction: column;
+    font-family: Manrope;
+    line-height: normal;
+    font-style: normal;
+    color: #FFF;
+
+}
+
+.magazines-text h2 {
+    font-size: 48px;
+    font-weight: 800;
+    width: 480px;
+    margin-bottom: 10px;
+
+}
+
+.magazines-text {
+    font-size: 24px;
+    font-weight: 700;
+    width: 448px;
+}
+
+.magazine-images {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 90px;
+
+}
+
+.magazine-images img:first-child{
+    margin-right: -50px;
+}
+
+.magazine-images img:last-child{
+    margin-left: -50px;
+}
+
+.magazines .banner-btn {
+    margin-top: 230px;
+    margin-bottom: unset;
+}
+
+.magazines .banner-btn button {
+    background-color: transparent;
+
+}
+
+/* Profile */
+
+
+
+
+
+
+
+
+
+
+
+

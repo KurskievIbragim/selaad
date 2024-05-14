@@ -302,7 +302,7 @@
         <div class="container">
             <div class="banner col-xxl-12 col-xl-12 mr-5 col-lg-12">
                 <div class="banner-text col-xxl-6 col-xl-6 col-lg-6">
-                    <!-- <h2>Хьамсара бераш,</h2> -->
+                    <h2>Хьамсара бераш,</h2>
                     <h3>Ер оагlув шоана лаьрхӀа я. </h3>
                     <p>Укхунга гӀолла редакце хьадайта мегаргда шоай йоазош:
                         фаьлгаш, дувцараш, байташ, сихаоаларгаш, дагардергаш, кроссвордаш,сурташ, иштта кхыдараш.
@@ -426,7 +426,7 @@
         </div>
     </section>
 
-    <section class="magazines">
+    <!-- <section class="magazines">
         <div class="container">
             <div class="magazine-block d-flex justify-content-between col-xxl-12 col-xl-12 col-lg-12">
                 <div class="magazines-text col-xxl-6 col-xl-6 col-lg-">
@@ -447,7 +447,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 @endsection

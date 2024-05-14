@@ -298,7 +298,7 @@
         </div>
     </section>
 
-    <section class="kid-banner">
+    <!-- <section class="kid-banner">
         <div class="container">
             <div class="banner col-xxl-12 col-xl-12 mr-5 col-lg-12">
                 <div class="banner-text col-xxl-6 col-xl-6 col-lg-6">
@@ -322,7 +322,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <section class="videostudio">

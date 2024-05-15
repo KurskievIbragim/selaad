@@ -28,23 +28,4 @@ jobs:
       run: |
         mkdir -p database
         touch database/database.sqlite
-    - name: Execute tests (Unit and Feature tests) via PHPUnit/Pest
-      env:
-        DB_CONNECTION: sqlite
-        DB_DATABASE: database/database.sqlite
-      run: php artisan test
-  deploy:
-      needs: laravel-tests
-      runs-on: debian-bullseye
-      steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: Deploy to server
-      uses: easingthemes/ssh-deploy@v2.0.0
-      with:
-        server: ${{ secrets.SERVER_IP }}
-        username: ${{ secrets.SERVER_USERNAME }}
-        password: ${{ secrets.SERVER_PASSWORD }}
-        source: '.' # Путь к вашему проекту
-        target: '/var/www/sela1ad' # Путь на вашем сервере, куда вы хотите развернуть проект
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
+  

@@ -52,9 +52,11 @@
             <div class="maim-right col-xxl-10 col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="top-tails col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="tail-long tail col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-xs-12">
+                        @if(isset($firstPost->image_main))
                         <div class="tail-img col-lg-7 col-md-7">
                             <img src="{{ asset('storage/images/'.$firstPost->image_main) }}" alt="tail2">
                         </div>
+                        @endif
                         <div class="tail-body col-md-5">
                             <a href="{{route('tailSingle', $firstPost->id)}}"><h2>{{$firstPost->title}}</h2></a>
                             @if(isset($firstPost->lead))

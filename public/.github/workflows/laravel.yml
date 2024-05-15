@@ -9,12 +9,12 @@ on:
 jobs:
   laravel-tests:
 
-    runs-on: ubuntu-latest
+    runs-on: debian-bullseye
 
     steps:
     - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
       with:
-        php-version: '8.0'
+        php-version: '8.2'
     - uses: actions/checkout@v4
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
@@ -33,3 +33,18 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: php artisan test
+  deploy:
+      needs: laravel-tests
+      runs-on: debian-bullseye
+      steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Deploy to server
+      uses: easingthemes/ssh-deploy@v2.0.0
+      with:
+        server: ${{ secrets.SERVER_IP }}
+        username: ${{ secrets.SERVER_USERNAME }}
+        password: ${{ secrets.SERVER_PASSWORD }}
+        source: '.' # Путь к вашему проекту
+        target: '/var/www/sela1ad' # Путь на вашем сервере, куда вы хотите развернуть проект
+        key: ${{ secrets.SSH_PRIVATE_KEY }}

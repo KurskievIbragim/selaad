@@ -35,7 +35,7 @@ jobs:
       run: php artisan test
   deploy:
       needs: laravel-tests
-      runs-on: debian-bullseye
+      runs-on: ubuntu-latest
       steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -45,6 +45,6 @@ jobs:
         server: ${{ secrets.SERVER_IP }}
         username: ${{ secrets.SERVER_USERNAME }}
         password: ${{ secrets.SERVER_PASSWORD }}
-        source: '.' # Путь к вашему проекту
-        target: '/var/www/sela1ad' # Путь на вашем сервере, куда вы хотите развернуть проект
+        source: '.' 
+        target: '/var/www/sela1ad'
         key: ${{ secrets.SSH_PRIVATE_KEY }}

@@ -416,6 +416,8 @@ header .search {
     padding: 25px;
 }
 
+
+
 .tail-img img {
     width: 100%;
     height: 100%;
@@ -2857,6 +2859,13 @@ div#more-words-btn\ d-flex {
         margin-top: 55px;
     }
 
+    .tail-body .author-name{
+        margin-left: 10px;
+    }
+
+    .poesy-all .poesy-item {
+        width: 100%;
+    }
 }
 
 

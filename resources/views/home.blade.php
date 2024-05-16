@@ -428,7 +428,7 @@
         </div>
     </section>
 
-    <!-- <section class="magazines">
+    <section class="magazines">
         <div class="container">
             <div class="magazine-block d-flex justify-content-between col-xxl-12 col-xl-12 col-lg-12">
                 <div class="magazines-text col-xxl-6 col-xl-6 col-lg-">
@@ -449,7 +449,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
 @endsection

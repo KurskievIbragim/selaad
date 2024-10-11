@@ -28,6 +28,7 @@ class StoreRequest extends FormRequest
             'image_main' => 'nullable',
             'category_id' => 'nullable',
             'user_id' => '',
+            'published_at' => 'required|date_format:Y-m-d\TH:i',
         ];
     }
 

@@ -28,6 +28,7 @@ class StoreRequest extends FormRequest
             'lead' => 'required | string|max:255',
             'content' => 'required',
             'category_id' => 'nullable',
+            'published_at' => 'required|date_format:Y-m-d\TH:i',
             'author_id' => 'nullable',
             'user_id' => 'nullable',
         ];

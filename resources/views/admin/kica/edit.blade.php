@@ -63,6 +63,12 @@
 
                     </div>
 
+                    <div class="form-group w-50">
+                        <input type="datetime-local" class="datetime_input" name="published_at"
+                               style="color: #495057; width: 250px; border: 1px solid #ced4da;
+                                   padding: 5px !important; "
+                               value="{{ $kica->published_at ? date('Y-m-d\TH:i', strtotime($kica->published_at)) : '' }}"                            >
+                    </div>
 
                     <input class="btn btn-primary" type="submit" value="Обновить">
                 </form>

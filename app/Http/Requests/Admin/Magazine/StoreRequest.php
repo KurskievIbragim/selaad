@@ -27,7 +27,8 @@ class StoreRequest extends FormRequest
             'number' => 'required|string',
             'year' => 'required|date',
             'preview' => 'required|image|mimes:jpg,jpeg,webp,png',
-            'file' => 'nullable|file|mimes:pdf', // Update this as per the actual file types
+            'file' => 'nullable|file|mimes:pdf',
+            'published_at' => 'required|date_format:Y-m-d\TH:i',
         ];
     }
 

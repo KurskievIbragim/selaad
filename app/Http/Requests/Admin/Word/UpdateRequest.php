@@ -26,8 +26,8 @@ class UpdateRequest extends FormRequest
         return [
             'word_ing' => 'required | string|max:255',
             'word_translate' => 'required | string|max:255',
-            'display' => 'required|integer'
-
+            'display' => 'required|integer',
+            'published_at' => 'nullable|date_format:Y-m-d\TH:i',
         ];
     }
 }

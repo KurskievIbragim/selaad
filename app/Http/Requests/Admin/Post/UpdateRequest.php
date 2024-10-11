@@ -32,6 +32,8 @@ class UpdateRequest extends FormRequest
             'is_popular' => 'nullable',
             'user_id' => 'nullable',
             'author_id' => 'nullable',
+            'published_at' => 'nullable|date_format:Y-m-d\TH:i',
+
         ];
     }
 }

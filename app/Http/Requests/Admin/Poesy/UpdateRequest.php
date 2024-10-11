@@ -27,6 +27,7 @@ class UpdateRequest extends FormRequest
             'title' => 'required | string|max:255',
             'lead' => 'required | string|max:255',
             'content' => 'required',
+            'published_at' => 'nullable|date_format:Y-m-d\TH:i',
             'category_id' => 'nullable',
             'author_id' => 'nullable',
             'user_id' => 'nullable',

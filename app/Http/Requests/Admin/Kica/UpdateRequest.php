@@ -28,6 +28,8 @@ class UpdateRequest extends FormRequest
             'image_main' => 'nullable',
             'category_id' => 'nullable',
             'author' => '',
+            'published_at' => 'required|date_format:Y-m-d\TH:i',
+
         ];
     }
 }

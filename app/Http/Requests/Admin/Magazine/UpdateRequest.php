@@ -28,6 +28,7 @@ class UpdateRequest extends FormRequest
             'title' => 'required | string|max:255',
             'image_main' => 'nullable',
             'videos' => 'required|file|mimetypes:videos/mp4',
+            'published_at' => 'required|date_format:Y-m-d\TH:i',
         ];
     }
 }

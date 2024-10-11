@@ -14,5 +14,6 @@ class Magazine extends Model
         'year',
         'file',
         'number',
+        'published_at'
     ];
 }

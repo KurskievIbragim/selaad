@@ -32,6 +32,8 @@ class StoreRequest extends FormRequest
             'is_popular' => 'nullable',
             'user_id' => 'nullable',
             'author_id' => 'nullable',
+            'published_at' => 'required|date_format:Y-m-d\TH:i',
+
         ];
     }
 

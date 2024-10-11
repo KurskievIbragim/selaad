@@ -19,6 +19,7 @@ class Poesy extends Model
         'user_id',
         'category_id',
         'lead',
+        'published_at'
     ];
 
 

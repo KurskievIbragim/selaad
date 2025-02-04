@@ -27,10 +27,11 @@ class HomeController extends Controller
         $words = Word::query()->where('display', 1)->latest()->paginate(5);
 
         // Main tails
-        $firstPost = Post::latest()->first();
-        $secondPost = Post::latest()->skip(1)->first();
-        $thirdPost = Post::latest()->skip(2)->first();
-        $fourPost = Post::latest()->skip(3)->first();
+        $firstPost = Post::orderBy('published_at', 'desc')->first();
+        $secondPost = Post::orderBy('published_at', 'desc')->skip(1)->first();
+        $thirdPost = Post::orderBy('published_at', 'desc')->skip(2)->first();
+        $fourPost = Post::orderBy('published_at', 'desc')->skip(3)->first();
+
 
 
 
@@ -38,7 +39,7 @@ class HomeController extends Controller
 
 
 
-        $poesy = Poesy::query()->orderBy('id', 'desc')->take(5)->get();
+        $poesy = Poesy::query()->orderBy('published_at', 'desc')->take(5)->get();
         $videos = Video::query()->latest()->take(3)->get();
         $famousPeople = FamousPeople::query()->latest()->take(5)->get();
 

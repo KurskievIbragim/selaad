@@ -38,7 +38,7 @@ class HomeController extends Controller
 
 
 
-        $poesy = Poesy::query()->latest()->take(5)->get();
+        $poesy = Poesy::query()->orderBy('id', 'desc')->take(5)->get();
         $videos = Video::query()->latest()->take(3)->get();
         $famousPeople = FamousPeople::query()->latest()->take(5)->get();
 

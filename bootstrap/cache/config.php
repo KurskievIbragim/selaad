@@ -198,8 +198,8 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => '/home/comrade/PhpstormProjects/selaad/storage/framework/cache/data',
-        'lock_path' => '/home/comrade/PhpstormProjects/selaad/storage/framework/cache/data',
+        'path' => '/var/www/selaad/storage/framework/cache/data',
+        'lock_path' => '/var/www/selaad/storage/framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -372,12 +372,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => '/home/comrade/PhpstormProjects/selaad/storage/app',
+        'root' => '/var/www/selaad/storage/app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => '/home/comrade/PhpstormProjects/selaad/storage/storage/app',
+        'root' => '/var/www/selaad/storage/storage/app',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -396,12 +396,12 @@
       'my_files' => 
       array (
         'driver' => 'local',
-        'root' => '/home/comrade/PhpstormProjects/selaad/public/',
+        'root' => '/var/www/selaad/public/',
       ),
     ),
     'links' => 
     array (
-      '/home/comrade/PhpstormProjects/selaad/public/storage' => '/home/comrade/PhpstormProjects/selaad/storage/app/',
+      '/var/www/selaad/public/storage' => '/var/www/selaad/storage/app/',
     ),
   ),
   'hashing' => 
@@ -440,14 +440,14 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => '/home/comrade/PhpstormProjects/selaad/storage/logs/laravel.log',
+        'path' => '/var/www/selaad/storage/logs/laravel.log',
         'level' => 'debug',
         'replace_placeholders' => true,
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => '/home/comrade/PhpstormProjects/selaad/storage/logs/laravel.log',
+        'path' => '/var/www/selaad/storage/logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
         'replace_placeholders' => true,
@@ -512,7 +512,7 @@
       ),
       'emergency' => 
       array (
-        'path' => '/home/comrade/PhpstormProjects/selaad/storage/logs/laravel.log',
+        'path' => '/var/www/selaad/storage/logs/laravel.log',
       ),
     ),
   ),
@@ -579,7 +579,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => '/home/comrade/PhpstormProjects/selaad/resources/views/vendor/mail',
+        0 => '/var/www/selaad/resources/views/vendor/mail',
       ),
     ),
   ),
@@ -691,7 +691,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => '/home/comrade/PhpstormProjects/selaad/storage/framework/sessions',
+    'files' => '/var/www/selaad/storage/framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -711,9 +711,9 @@
   array (
     'paths' => 
     array (
-      0 => '/home/comrade/PhpstormProjects/selaad/resources/views',
+      0 => '/var/www/selaad/resources/views',
     ),
-    'compiled' => '/home/comrade/PhpstormProjects/selaad/storage/framework/views',
+    'compiled' => '/var/www/selaad/storage/framework/views',
   ),
   'flare' => 
   array (
@@ -790,7 +790,7 @@
     array (
     ),
     'enable_runnable_solutions' => NULL,
-    'remote_sites_path' => '/home/comrade/PhpstormProjects/selaad',
+    'remote_sites_path' => '/var/www/selaad',
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
     'settings_file_path' => '',

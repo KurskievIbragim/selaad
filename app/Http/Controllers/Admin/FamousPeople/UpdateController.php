@@ -13,8 +13,11 @@ class UpdateController extends BaseController
     public function __invoke(UpdateRequest $request, FamousPeople $famousPeople)
     {
         $data = $request->validated();
-        $data['image_main'] = Storage::put('images', $data['image_main']);
-        $data['image_main'] = str_replace('images/', '', $data['image_main']);
+        
+        if(isset($data['image_main'])) {
+            $data['image_main'] = Storage::put('images', $data['image_main']);
+            $data['image_main'] = str_replace('images/', '', $data['image_main']);
+        }
 
         $famousPeople->update($data);
 

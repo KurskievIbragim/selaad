@@ -18,7 +18,7 @@ class TailController extends Controller
         $kicash = Kica::query()->take(6)->orderBy('id', 'desc')->get();
 
         $tails = Post::query()
-            ->where('category_id', 5)
+            ->where('category_id', 3)
             ->orderBy('id', 'desc')
             ->paginate(6);
 
@@ -38,7 +38,7 @@ class TailController extends Controller
         $kicash = Kica::query()->take(6)->orderBy('id', 'desc')->get();
 
         $tails = Post::query()
-            ->where('category_id', 1)
+            ->where('category_id', 2)
             ->orderBy('id', 'desc')
             ->paginate(6);
 

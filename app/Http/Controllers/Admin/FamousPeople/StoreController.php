@@ -15,8 +15,10 @@ class StoreController extends BaseController
 
         $data = $request->validated();
 
-            $data['image_main'] = Storage::put('images', $data['image_main']);
-            $data['image_main'] = str_replace('images/', '', $data['image_main']);
+            if(isset($data['image_main'])) {
+                $data['image_main'] = Storage::put('images', $data['image_main']);
+                $data['image_main'] = str_replace('images/', '', $data['image_main']);
+            }
 
 
         FamousPeople::firstOrCreate($data);

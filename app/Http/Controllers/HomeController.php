@@ -64,7 +64,7 @@ class HomeController extends Controller
 
         $words = Word::query()->where('display', 1)->latest()->paginate(5);
         $kicash = Kica::query()->take(6)->orderBy('id', 'desc')->get();
-        $poesys = Poesy::query()->orderBy('id', 'desc')->paginate(12);
+        $poesys = Poesy::query()->orderBy('published_at', 'desc')->paginate(12);
 
 
 

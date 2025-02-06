@@ -27,7 +27,7 @@ class StoreRequest extends FormRequest
             'title' => 'required | string|max:255',
             'lead' => 'required|max:5000',
             'bio' => 'required|max:5000',
-            'image_main' => 'required|file',
+            'image_main' => 'nullable|file',
             'category_id' => 'nullable',
         ];
     }

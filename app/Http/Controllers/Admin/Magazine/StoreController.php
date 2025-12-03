@@ -16,15 +16,13 @@ class StoreController extends BaseController
         $data = $request->validated();
 
         if ($request->hasFile('preview')) {
-            $file = $request->file('preview');
-            // Сохраняем в storage/app/previews
-            $data['preview'] = $file->store('previews');
+            $data['preview'] = Storage::put('previews', $data['preview']);
+            $data['preview'] = str_replace('previews/', '', $data['preview']);
         }
 
         if ($request->hasFile('file')) {
-            $file = $request->file('file');
-            // Сохраняем в storage/app/magazines
-            $data['file'] = $file->store('magazines');
+            $data['file'] = Storage::put('magazines', $data['file']);
+            $data['file'] = str_replace('magazines/', '', $data['file']);
         }
 
         Magazine::firstOrCreate($data);

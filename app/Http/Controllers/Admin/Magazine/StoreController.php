@@ -17,12 +17,14 @@ class StoreController extends BaseController
 
         if ($request->hasFile('preview')) {
             $file = $request->file('preview');
-            $data['preview'] = $file->store('previews', 'public');
+            // Сохраняем в storage/app/previews
+            $data['preview'] = $file->store('previews');
         }
 
         if ($request->hasFile('file')) {
             $file = $request->file('file');
-            $data['file'] = $file->store('magazines', 'public');
+            // Сохраняем в storage/app/magazines
+            $data['file'] = $file->store('magazines');
         }
 
         Magazine::firstOrCreate($data);

@@ -26,7 +26,7 @@ class StoreRequest extends FormRequest
         return [
             'number' => 'required|string',
             'year' => 'required|date',
-            'preview' => 'required|image|mimes:jpg,jpeg,webp,png',
+            'preview' => 'nullable|image|mimes:jpg,jpeg,webp,png',
             'file' => 'nullable|file|mimes:pdf',
             'published_at' => 'required|date_format:Y-m-d\TH:i',
         ];

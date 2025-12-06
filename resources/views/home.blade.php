@@ -300,7 +300,7 @@
         </div>
     </section>
 
-    <!-- <section class="kid-banner">
+    <section class="kid-banner">
         <div class="container">
             <div class="banner col-xxl-12 col-xl-12 mr-5 col-lg-12">
                 <div class="banner-text col-xxl-6 col-xl-6 col-lg-6">
@@ -324,7 +324,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
     <section class="videostudio">
@@ -399,9 +399,6 @@
             <div class="peoples col-lg-12">
                 @foreach($famousPeople as $people)
                     <div class="people col-lg-4">
-                        <div class="people-avatar">
-                            <img src="{{ asset('storage/images/'.$people->image_main) }}" alt="">
-                        </div>
 
                         <div class="people-name">
                             <a href="{{route('personSingle', $people->id)}}"><h3>{{$people->title}}</h3></a>

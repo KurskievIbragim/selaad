@@ -58,13 +58,13 @@
                 <h3 class="page-title">Журналаш</h3>
                 <div class="peoples magazine-page col-xxl-12">
                     @foreach($magazines as $magazine)
-                        <a href="{{'storage/' . $magazine->file}}" target="_blank">
+                        <a href="{{'storage/magazines/' . $magazine->file}}" target="_blank">
                             <div class="people">
                                 <div class="magazine-date">
                                     <span>{{'№' . $magazine->number}}</span>
                                     <p>{{$magazine->year}}</p>
                                 </div>
-                                <img src="{{ asset('storage/'.$magazine->preview) }}" alt="">
+                                <img src="{{ asset('storage/previews/'.$magazine->preview) }}" alt="">
                             </div>
                         </a>
                     @endforeach
